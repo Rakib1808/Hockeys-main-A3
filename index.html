@@ -11,45 +11,78 @@
 
 <style>
     .font-Manrope{
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Manrope', 'sans-serif';
     }
 </style>
 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+ 
 
 </head>
 <body>
     <header class="py-10 px-4 md:px-32">
-        <nav class="flex flex-col md:flex-row justify-between items-center font-Manrope mb-10">
-            <div>
+        <nav class="md:flex md:flex-row md:justify-between md:items-center md:mb-10">
+            <div class="flex items-center gap-3">
+                <span class="md:hidden cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                  </svg> 
+                  </span>               
+                  
              <h3 class="font-semibold text-6xl">Hockey<span class="text-red-500 ">’</span>s</h3>
             </div>
-            <div class="flex gap-10 text-base">
-                <p class="text-red-500">Home</p>
-                <p>About</p>
-                <p>Pages</p>
-                <p>Blog</p>
-                <p>Contact</p>
-            </div>
-            <div class="flex items-center gap-4">
+            
+            <ul class="md:flex items-center md:gap-10 text-base flex-col md:flex-row">
+                <li class="text-red-500">Home</li>
+                <li>About</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <span
+             class="md:flex md:items-center md:gap-4 ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                   </svg>
-                <button class=" py-4 px-6 text-white rounded-lg font-medium bg-red-500">
+                <button class=" py-4 px-6 text-white rounded-lg font-medium bg-red-500 ">
                     <img text-xl>Get Ticket</button>
-            </div>
+            </span>
         </nav>
         <!-- banner section -->
         <div>
-            <div class="relative">
+            <div class="md:relative">
                  <img src="./Images/1.png" alt="">
-             <div class="bg-black p-8 max-w-lg max-h-30 text-white rounded-2xl absolute bottom-10 right-10">
+             <div class="bg-black p-8 max-w-lg max-h-30 text-white rounded-2xl md:absolute md:bottom-10 md:right-10 mt-5">
                 <h5 class="text-2xl mb-7">Meet all the heroes from the field</h5>
                 <p class="text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
              </div>
             </div>
         </div>
         <main>
+
+            <!-- Hockeys Club section -->
+
+            <section>
+                <div class="mt-20 text-center">
+                    <h3 class="text-4xl">Professional Hockeys Club</h3>
+                    <p class="text-base mt-10 mb-20">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <div class=" flex flex-col md:flex-row  gap-10 justify-between items-center ">
+                    <div class="radial-progress text-red-500 size-36" style="--value:87;" role="progressbar"><span class="text-neutral-950 text-2xl">87%</span></div>
+                    <div class="radial-progress text-green-400 size-36" style="--value:95;" role="progressbar"><span class="text-neutral-950 text-2xl">95%</span></div>
+                    <div class="radial-progress text-yellow-500 size-36" style="--value:90;" role="progressbar"><span class="text-neutral-950 text-2xl">90%</span></div>
+                    <div class="radial-progress text-teal-600 size-36 text-2xl" style="--value:80;" role="progressbar"><span class="text-neutral-950 text-2xl">80%</span></div>
+                </div>
+            </section>
+
+            <!-- Program Sections -->
+            <section>
+                <div class="text-center mt-20">
+                    <h3 class="text-4xl mb-10">Program Sections</h3>
+                    <p text-base mb-20>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </section>
         </main>
     </header>
     <footer>
